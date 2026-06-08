@@ -2,27 +2,142 @@
 <html lang = "pl">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body style="margin:0px"> 
-    <header style="
-    background-color: aquamarine;
-    color: aliceblue;
-    text-align: center;
-    padding: 10px;
-    margin: 0px;
-    ">
-     <h1> Lorem ipsum</h1>
+    <title>Strona o koniach</title>
+    
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+
+<body> 
+    
+    <header>
+     <h1 id="swiatkoni">
+        Świat koni
+    </h1>
     </header>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Labore veniam iusto dicta laborum quas. Totam quos illo unde itaque ipsa? 
-Et, magnam delectus iure nulla ullam suscipit nemo officia odio.
+
+<div class="center">
+    <button onclick="location.href='index.html'">Strona główna</button>
+ 
+    
+        <button onclick="location.href='#spistresci'">Spis treści
+        </button>
+        
+ 
+    <button onclick="location.href='#autor'">Autor</button>
+</div>
+
+    <p>
+        
+  Konie od wieków towarzyszą człowiekowi, pełniąc różnorodne role od wiernych towarzyszy w pracy, przez bohaterów bitew, <br>
+  aż po uczestników sportowych zmagań. Ich elegancja, siła i wierność budzą podziw i fascynację. <br> 
+  W Polsce, gdzie tradycja jeździecka ma głębokie korzenie, konie były nie tylko narzędziem pracy, ale także symbolem kultury i historii. 
+  Dziś, choć ich rola w codziennym życiu uległa zmianie, wciąż pozostają nieodłącznym elementem naszej tożsamości. <br> 
+  Na tej stronie przyjrzymy się bliżej tym niezwykłym zwierzętom - ich historii, rasom, zmysłom, sposobom komunikacji oraz współczesnemu znaczeniu.
 </p> 
+
+   <h3 class="subtitle" id="spistresci">
+    Spis treści
+</h3>
+   
+    
+
+<ol>
+    <li><a href="podstawoweinfo.html">Podstawowe informacje</a></li>
+    <li><a href="budowakonia.html"> Budowa konia</a></li>
+    <li><a href="rasykoni.html"> Rasy koni</a></li>
+    <li><a href="sportyjeżdzieckie.html">Sporty jeździeckie</a></li>
+</ol>
+
+<div class="center">
+
+ <div class="picture"><img src="kon.jpg" alt="kon"></div>
+ <div class="picture"><img src="kon1.webp" alt="kon"></div>
+ <div class="picture"><img src="kon2.jpg" alt="kon"></div>
+
+ </div>
+
+<p> 
+    „Żadna chwila nie została zmarnowana, jeśli spędziło się ją w siodle.” <br>
+     - Winston Churchill
+</p>
+   
+
+
+ <h3 class="subtitle">Czy wiesz, że...?</h3>
+
+<p id="ciekawostka">
+    Każdy koń ma niepowtarzalny układ włosków na pysku, 
+    podobnie jak ludzie mają unikalne odciski palców.
+</p>
+
+<div class="center">
+<button onclick="losujCiekawostke()">
+    Losuj
+</button>
+</div>
+
+ <div class="center">
+
+ <div class="picture"><img src="kon3.jpg" alt="kon"></div>
+ <div class="picture"><img src="kon4.webp" alt="kon"></div>
+ <div class="picture"><img src="kon5.jpeg" alt="kon"></div>
+ 
+</div>
+
+<div class="center">
+<button onclick="location.href='index.html'">Strona główna</button>
+<button onclick="location.href='#swiatkoni'">Wróć na górę</button>
+</div>
+
 <footer>
-     <p>Autor: Maria Ołdakowska
-        Indeks: s34608
-        Email: s34608@pjwstk.edu.pl
+ 
+     <p id="autor">
+        Autor: Maria Ołdakowska <br>
+        Indeks: s34608 <br>
+        Email: s34608@pjwstk.edu.pl<br>
+        <a href="autor.html" style="color: aliceblue;">
+            Wiecej o mnie</a>
      </p>
 </footer>
+
+<script>
+function losujCiekawostke() {
+    const ciekawostki = [
+        "Każdy koń ma niepowtarzalny układ włosków na pysku, podobnie jak ludzie mają odciski palców.",
+        "Konie potrafią spać na stojąco.",
+        "Pole widzenia konia wynosi około 350 stopni.",
+        "Źrebię może wstać już około godzinę po narodzinach.",
+        "Konie rozpoznają ludzkie emocje po wyrazie twarzy.",
+        "Uszy konia mogą obracać się o 180 stopni.",
+        "Koń nie potrafi oddychać przez pysk — oddycha wyłącznie przez nos.",
+    "Konie nie potrafią wymiotować.",
+    "Serce dorosłego konia waży nawet około 5 kilogramów.",
+    "Najszybsze konie wyścigowe mogą osiągać prędkość ponad 70 km/h.",
+    "Konie potrafią zapamiętać człowieka nawet po wielu latach rozłąki.",
+    "Koń może wydawać ponad 10 różnych dźwięków służących do komunikacji.",
+    "Konie odczuwają emocje takie jak strach, radość i ciekawość.",
+    "Konie są zwierzętami stadnymi i źle znoszą samotność.",
+    "Źrebięta rodzą się z bardzo długimi nogami, które stanowią dużą część ich wysokości.",
+    "Konie potrafią rozpoznawać siebie nawzajem po głosie.",
+    "Najdłużej żyjący udokumentowany koń dożył 62 lat.",
+    "Koń może wypić nawet 40–50 litrów wody dziennie.",
+    "Konie mają świetny słuch i potrafią usłyszeć dźwięki, których człowiek nie zauważa.",
+    "Oczy konia należą do największych spośród wszystkich ssaków lądowych.",
+    "Koń może poruszać uszami niezależnie od siebie.",
+    "Dzikimi przodkami współczesnych koni były zwierzęta wielkości lisa.",
+    "Konie potrafią uczyć się przez obserwowanie innych koni.",
+    "Niektóre konie potrafią otwierać zasuwy i drzwi w stajni.",
+    "Koń potrafi wyczuć nastrój jeźdźca i często reaguje na jego stres lub zdenerwowanie.",
+    "Koń „biega na palcach” – jego kopyto to tak naprawdę zmodyfikowany jeden palec, co zwiększa szybkość, ale zmniejsza możliwość chwytania jak u innych ssaków.",
+    ];
+
+    const losowyNumer = Math.floor(Math.random() * ciekawostki.length);
+
+    document.getElementById("ciekawostka").textContent =
+        ciekawostki[losowyNumer];
+}
+</script>
+
 </body>
 </html>
